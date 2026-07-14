@@ -1,7 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Computing Demo</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #005A9E 0%, #0078D4 50%, #00C6FF 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .card {
+            width: 450px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 24px;
+            padding: 50px 40px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        h1 {
+            color: #0078D4;
+            margin-bottom: 10px;
+            font-size: 32px;
+            letter-spacing: -0.5px;
+        }
+
+        h2 {
+            color: #555;
+            font-weight: 500;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 2px;
+        }
+
+        p {
+            color: #444;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #28a745;
+            color: white;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 14px;
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+
 <body>
-    <h1>Demo chủ đề 6</h1>
-    <p>Welcome!</p>
+
+    <div class="card">
+        <h1>☁️ Cloud Computing</h1>
+        <h2>Chủ đề 6</h2>
+        <p><strong>Infrastructure as Code, CI/CD và GitOps</strong></p>
+        <p>Demo triển khai ứng dụng thành công trên nền tảng Azure Kubernetes Service.</p>
+        <div class="badge">🚀 Deploy Success</div>
+    </div>
+
 </body>
 </html>
